@@ -477,7 +477,7 @@ class MTSSB_Front extends MTSSB_Booking {
 				} else if ($capacity_rate <= 0) {
 					$mark = 'full';
 				} else {
-					$mark = 'low';
+					$mark = 'low';// test
 				}
 				// 席数(人数)残数
 				$disp_number = $capacity - $rsvd_number;
