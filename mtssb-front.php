@@ -193,7 +193,7 @@ class MTSSB_Front extends MTSSB_Booking {
 	/**
 	 * 指定日の予約情報を出力
 	 *
-	 * @thetime		ymd unixtime
+	 * @thetime		ymd unixtime　　他愛のない変更
 	 */
 	private function _reservation_of_the_day($thetime/**今日の日付 */, $params) {
 		global $mts_simple_booking;
