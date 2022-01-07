@@ -210,7 +210,7 @@ class MTSSB_Booking {
 		}
 
 		$data = $wpdb->get_results($wpdb->prepare("
-			SELECT booking_id,booking_time,confirmed,parent_id,article_id,user_id,number,options,client,created
+			SELECT booking_id,booking_time,confirmed,parent_id,article_id,user_id,number,options,client,created,visit_time
 			FROM $this->tblBooking
 			WHERE booking_time=%d AND $conditions
 			ORDER BY article_id ASC, booking_id ASC", $thetime), ARRAY_A);

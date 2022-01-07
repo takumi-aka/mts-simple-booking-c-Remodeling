@@ -375,7 +375,7 @@ class MTSSB_Calendar_Admin extends MTSSB_Booking {
 				}
 				$adjustment = $this->_retrieve_adjustment($reserved);
 			?><div class="article-time">
-				<div class="booking-time"><?php echo date('H:i', $time) ?></div>
+				
 				<?php if ($daytime < $this->today_time) {
 					echo '<div class="booking-number-adjusted">' . $number;
 				} else {
@@ -389,7 +389,7 @@ class MTSSB_Calendar_Admin extends MTSSB_Booking {
 						echo '<div class="client-name">';
 						echo '<a href="?page=' . self::PAGE_NAME . "&amp;bid={$reserve['booking_id']}\">";
 						echo empty($client['name']) ? __('No Name', $this->domain) : esc_html($client['name']);
-						echo "</a>({$reserve['number']})";
+						echo "</a> {$reserve['visit_time']} ({$reserve['number']})";
 						echo "</div>";
 					}
 				} else {
@@ -487,7 +487,7 @@ class MTSSB_Calendar_Admin extends MTSSB_Booking {
 			</tr>
 			<tr>
 				<th><?php _e('Date Time', $this->domain) ?></th>
-				<td><?php echo $datestr . date(' H:i', $this->booking['booking_time']) ?></td>
+				<td><?php echo $datestr . ' ' . $this->booking['visit_time'] ?></td>
 			</tr>
 			<tr>
 				<th><?php _e('Number', $this->domain) ?></th>
@@ -501,6 +501,10 @@ class MTSSB_Calendar_Admin extends MTSSB_Booking {
 				<th><?php _e('Furigana', $this->domain) ?></th>
 				<td><?php echo esc_html($this->booking['client']['furigana']) ?></td>
 			</tr>
+			<tr>
+				<th><?php _e('紹介者の名前', $this->domain) ?></th>
+				<td><?php echo esc_html($this->booking['introducer']) ?></td>
+			</tr>			
 			<tr>
 				<th><?php _e('E-Mail', $this->domain) ?></th>
 				<td><?php echo esc_html($this->booking['client']['email']) ?></td>
