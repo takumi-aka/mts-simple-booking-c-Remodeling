@@ -333,6 +333,11 @@ class MTSSB_Booking_Form extends MTSSB_Booking {
 			}
 		}
 
+		// 紹介者の入力確認
+		if (empty($this->booking['introducer'])) {
+			$this->errmsg['introducer'] = $this->_err_message('REQUIRED');
+		}
+
 		// 年齢制限の確認
 		if (isset($this->clcols['birthday']) && 1 == $this->clcols['birthday']) {
 			$limit = $this->_age_limit();
@@ -580,9 +585,10 @@ class MTSSB_Booking_Form extends MTSSB_Booking {
 			<?php if (isset($this->errmsg['tel'])) : ?><div class="error-message"><?php echo $this->errmsg['tel'] ?></div><?php endif; ?></td>
 		</tr><?php endif; ?>
 		<tr>
-			<th><label>ご紹介者のお名前</label></th>
+			<th><label>ご紹介者のお名前</label><span>(</sapm><span class="required">※</span><span>)</span></th>
 			<td>
 				<input class="content-text medium" type="text" name="booking[introducer]" value="<?php echo esc_html($this->booking['introducer']) ?>" maxlength="100" />
+				<?php if (isset($this->errmsg['introducer'])) : ?><div class="error-message"><?php echo $this->errmsg['introducer'] ?></div><?php endif; ?>
 			</td>
 		</tr>
 	</table>
@@ -607,8 +613,8 @@ class MTSSB_Booking_Form extends MTSSB_Booking {
 		<tr>
 			<th><label>カレンダーに名前の表示</label></th>
 			<td>
-				<input type="radio" name="booking[show_name]" value="表示する">する
-				<input type="radio" name="booking[show_name]" value="表示しない" checked>しない
+				<input type="radio" name="booking[show_name]" value="表示する" checked>する
+				<input type="radio" name="booking[show_name]" value="表示しない">しない
 			</td>
 		</tr>
 		<tr>
@@ -706,9 +712,9 @@ class MTSSB_Booking_Form extends MTSSB_Booking {
 			<td>
 				<?php foreach ($this->controls['count'] as $key => $val) : ?><div class="input-number"<?php echo $val != 1 ? ' style="display:none"' : '' ?>><?php
 					$title = apply_filters('booking_form_count_label', __(ucwords($key), $this->domain));
-				 	if ($title != '') { echo "$title<br />"; }
+				 	if ($title != '') { echo ""; }
 				?>
-					<?php echo esc_html($client[$key]) ?><input type="hidden" name="booking[client][<?php echo $key ?>]" value="<?php echo esc_html($client[$key]) ?>" maxlength="5" /><?php echo apply_filters('booking_form_count_note', '') ?>
+					<?php echo esc_html($client[$key] . "人") ?><input type="hidden" name="booking[client][<?php echo $key ?>]" value="<?php echo esc_html($client[$key]) ?>" maxlength="5" /><?php echo apply_filters('booking_form_count_note', '') ?>
 				</div><?php endforeach; ?>
 				<?php if (isset($this->errmsg['count'])) : ?><div class="error-message"><?php echo $this->errmsg['count'] ?></div><?php endif; ?>
 			</td>

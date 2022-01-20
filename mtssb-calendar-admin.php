@@ -504,7 +504,7 @@ class MTSSB_Calendar_Admin extends MTSSB_Booking {
 			<tr>
 				<th><?php _e('紹介者の名前', $this->domain) ?></th>
 				<td><?php echo esc_html($this->booking['introducer']) ?></td>
-			</tr>			
+			</tr>
 			<tr>
 				<th><?php _e('E-Mail', $this->domain) ?></th>
 				<td><?php echo esc_html($this->booking['client']['email']) ?></td>

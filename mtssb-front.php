@@ -193,7 +193,7 @@ class MTSSB_Front extends MTSSB_Booking {
 	/**
 	 * 指定日の予約情報を出力
 	 *
-	 * @thetime		ymd unixtime　　他愛のない変更
+	 * @thetime		ymd unixtime
 	 */
 	private function _reservation_of_the_day($thetime/**今日の日付 */, $params) {
 		global $mts_simple_booking;
@@ -313,7 +313,7 @@ class MTSSB_Front extends MTSSB_Booking {
 				echo $linkurl ? ('<a class="calendar-daylink" href="' . $linkurl . '">') : '';
 				echo (empty($this->controls[$mark . '_mark']) ? $disp_number : $this->controls[$mark . '_mark']);
 				echo $linkurl ? '</a>' : '';
-				echo "<br>残り" . $disp_number ."名様";
+				echo "<br>残り" . $disp_number ."席";
 			} else if ($mark == 'full') {
 				echo "<br>満席";
 				//echo $this->controls['full_mark'];
@@ -364,14 +364,14 @@ class MTSSB_Front extends MTSSB_Booking {
 ?>
 	<div class="monthly-prev-next">
 		<div class="monthly-prev"><?php if ($this->this_time <= $prevtime) {
-			echo '<a style="color:black" href="' . esc_url(add_query_arg($prev_arg, $this->this_page)) . '">' . $prev_title . '</a>';
+			echo '<a style="color:#fff" href="' . esc_url(add_query_arg($prev_arg, $this->this_page)) . '">' . $prev_title . '</a>';
 		} else {
-			echo "<span class=\"no-link\">$prev_title</span>";
+			echo "<span class=\"no-link\" style=\"color:#fff\">$prev_title</span>";
 		} ?></div>
 		<div class="monthly-next"><?php if ($nexttime < $this->max_time) {
-			echo '<a style="color:black" href="' . esc_url(add_query_arg($next_arg, $this->this_page)) . '">' . $next_title . '</a>';
+			echo '<a style="color:#fff" href="' . esc_url(add_query_arg($next_arg, $this->this_page)) . '">' . $next_title . '</a>';
 		} else {
-			echo "<span class=\"no-link\">$next_title</span>";
+			echo "<span class=\"no-link\" style=\"color:#fff\">$next_title</span>";
 		} ?></div>
 		<br style="clear:both" />
 	</div>
@@ -477,7 +477,7 @@ class MTSSB_Front extends MTSSB_Booking {
 				} else if ($capacity_rate <= 0) {
 					$mark = 'full';
 				} else {
-					$mark = 'low';// test
+					$mark = 'low';
 				}
 				// 席数(人数)残数
 				$disp_number = $capacity - $rsvd_number;

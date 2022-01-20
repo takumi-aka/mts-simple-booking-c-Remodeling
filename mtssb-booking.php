@@ -238,7 +238,7 @@ class MTSSB_Booking {
 		
 
 		$sql = $wpdb->prepare("
-			SELECT booking_id,booking_time,confirmed,parent_id,article_id,user_id,number,options,client,created,
+			SELECT booking_id,booking_time,confirmed,parent_id,article_id,user_id,number,options,client,created,visit_time,
 				Post.post_title AS article_name
 			FROM $this->tblBooking
 			JOIN {$wpdb->posts} AS Post ON article_id=Post.ID

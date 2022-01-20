@@ -264,6 +264,7 @@ class MTSSB_Booking_List extends WP_List_Table {
 		return array(
 			'booking_id' => __('ID', $this->domain),
 			'booking_time' => __('Booking Date', $this->domain),
+			'visit_time' => __('来店予定時刻'),	
 			'name' => __('Name'),
 			'number' => __('Number', $this->domain),
 			'article_id' => __('Article Name', $this->domain),
@@ -304,6 +305,8 @@ class MTSSB_Booking_List extends WP_List_Table {
 				return substr($item[$column_name], 0, 10) . '<br />' . substr($item[$column_name], -8);
 			case 'name' :
 				return (empty($item['client']['company']) ? '' : sprintf('%s<br />', esc_html($item['client']['company']))) . esc_html($item['client']['name']);
+			case 'visit_time' :
+				return $item[$column_name];
 			//case 'booking_time' :
 			//	return date('Y-m-d H:i', $item['booking_time']);
 			default :
@@ -325,7 +328,8 @@ class MTSSB_Booking_List extends WP_List_Table {
 		);
 
 		//return esc_html($item['client']['name']) . $this->row_actions($actions);
-		return date('Y-m-d H:i', $item['booking_time']) . $this->row_actions($actions);
+		return date('Y-m-d', $item['booking_time']) . $this->row_actions($actions);
+		//return date('Y-m-d H:i', $item['booking_time']) . $this->row_actions($actions);
 	}
 
 

@@ -5,6 +5,8 @@
 	padding: 0;
 }
 
+
+@media screen and (min-width:1031px) {
 /* 月間予約カレンダー */
 .monthly-calendar {
 	clear: none;
@@ -142,6 +144,11 @@ a.booking-timelink {
 	
 }
 
+
+
+
+
+
 /* 予約フォーム */
 .content-form fieldset {
 	border: 1px solid #dddddd;
@@ -229,6 +236,11 @@ input.right {
 	color: red;
 }
 
+
+
+
+
+
 /* 予約フォーム オプション表示項目 */
 .content-form input.booking-option-number {
 	text-align: right;
@@ -247,3 +259,1790 @@ input.right {
 	font-size: 1rem;
 	padding: 0.1rem 0.15rem;
 }
+
+}
+
+
+
+@media screen and (max-width:1030px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 1.1rem;
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 1.1rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 1rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.9rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 1rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+
+
+
+	
+@media screen and (max-width:800px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.9rem; /* 1.1 → 0.9*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 1.0rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 0.9rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.9rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.9rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+	
+@media screen and (max-width:550px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;	
+	}
+	
+	.monthly-calendar caption {/*予約カレンダー下の年月日*/
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {/*カレンダーヘッダ*/
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;	
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.9rem; /* 1.1 → 0.9*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 1.0rem; /*全体的な見出し*/
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 0.8rem;   /*各コラムの見出し*/
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.8rem; /*各コラムのテキスト*/
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.8rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+
+	
+@media screen and (max-width:480px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.7rem; /* 1.1 → 0.8*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 0.9rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 0.7rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.7rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.7rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+
+
+	
+@media screen and (max-width:400px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.6rem; /* 1.1 → 0.9*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 0.6rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.6rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.6rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+
+	
+@media screen and (max-width:330px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.4rem; /* 1.1 → 0.4*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+	}
+	
+	.content-form th {
+		font-size: 0.4rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.4rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.4rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 1rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+	}
+
+	
+@media screen and (max-width:290px) {
+	/* 月間予約カレンダー */
+	.monthly-calendar {
+		clear: none;
+		font-family: sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	
+	.monthly-calendar table {
+		table-layout : fixed ;
+		color: #f0f0f0;
+		width: 100%;
+	}
+	
+	.monthly-calendar caption {
+		font-size: 1.1rem;
+		text-align: center;
+	
+	}
+	
+	.monthly-calendar th {
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #3f3f3f;
+	}
+	
+	.week-title.sun,
+	.day-box.sun .day-number {
+		color: #eb4629;
+	}
+	
+	.week-title.sat,
+	.day-box.sat .day-number {
+		color: #33CCFF;
+	}
+	
+	.day-box.holiday .day-number {
+		color: #ff6347;
+	}
+	
+	.monthly-calendar th,
+	.monthly-calendar td {
+		text-align: center;
+	}
+	
+	.monthly-calendar td {
+		padding: 6px 0;
+		vertical-align : top ;
+		background-color: #131313;
+	}
+	
+	.day-box.no-day {
+		background-color: #070707;
+	}
+	
+	.day-box.today {
+		background-color: #911e6e;
+	}
+	
+	a.calendar-daylink {
+		display: block;
+	}
+	
+	.monthly-prev {
+		float: left;
+	}
+	
+	.monthly-next {
+		float: right;
+		margin-right: 1rem;
+	}
+	
+	.calendar-mark {
+		color: #949494;
+	
+		font-size: 0.2rem; /* 1.1 → 0.3*/
+		margin-bottom: 0.1rem;
+		vertical-align: bottom;
+	}
+	
+	/* 指定日予約状況表示 */
+	.day-calendar {
+		font-family: sans-serif;	
+		margin-bottom: 1.5rem;
+	}
+	
+	.day-calendar h3 {
+		font-size: 1.1rem;
+		margin: 10px 0;
+	}
+	
+	.day-calendar table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 1px 5px;
+		width: 80%;
+	}
+	
+	.day-calendar th,
+	.day-calendar td {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	th.day-left {
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border: 1px solid #dddddd;
+		line-height: 2.5rem;
+	}
+	
+	th.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+	}
+	
+	td.day-right {
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid #dddddd;
+		font-size: 1.5rem;
+	}
+	
+	a.booking-timelink {
+		display: block;
+		
+	}
+	
+	
+	
+	
+	
+	
+	/* 予約フォーム */
+	.content-form fieldset {
+		border: 1px solid #dddddd;
+		padding: 10px 0 0 10px;
+		margin: 0 0 1.5rem 0;
+		width: 99%;
+	}
+	
+	.content-form legend {
+		font-size: 0.7rem;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+	
+	.content-form table {
+		border: none;
+		border-collapse: separate;
+		border-spacing: 5px;
+		margin: 0 0 5px 0;
+		width: 99%;
+	}
+	
+	.content-form th,
+	.content-form td {
+		border-top: none;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: none;
+		padding: 2px;
+		vertical-align: middle;
+		
+	}
+	
+	.content-form th {
+		font-size: 0.3rem;
+		line-height: 2.2rem;
+		padding-right: 10px;
+		text-align: right;
+		vertical-align: top;
+		width: 30%;
+	}
+	
+	.content-form td {
+		font-size: 0.3rem;
+	}
+	
+	.content-form input,
+	.content-form textarea {
+		padding: 3px;
+		margin-bottom: 3px;
+		font-size: 0.3rem;
+	}
+	
+	.content-form button {
+		padding: 3px 7px;
+	}
+	
+	.content-text.small {
+		width: 3rem;
+	}
+	
+	.content-text.medium {
+		width: 48%;
+	}
+	
+	.content-text.fat {
+		width: 95%;
+	}
+	
+	.input-number {
+		float: left;
+		margin-right: 1rem;
+		text-align: center;
+	}
+	
+	input.right {
+		text-align: right;
+	}
+	
+	.content-form .error-message {
+		clear: both;
+		color: red;
+	}
+	
+	.content-form .required {
+		color: red;
+		font-size: 0.9rem;		
+	}
+	
+
+	
+	/* 予約フォーム オプション表示項目 */
+	.content-form input.booking-option-number {
+		text-align: right;
+		width: 3rem;
+	}
+	
+	.content-form label.field-item {
+		margin-right: 0.4rem;
+	}
+	
+	.content-form label.field-item input {
+		margin-right: 0.15rem;
+	}
+	
+	.content-form select {
+		font-size: 0.8rem;
+		padding: 0.1rem 0.15rem;
+	}
+	
+
+	}

@@ -308,7 +308,7 @@ class MTSSB_Front extends MTSSB_Booking {
 
 
 		if ($mark == 'vacant' || $mark == 'low') {
-			echo "<br>予約可能人数<br>残り" . $disp_number ."名様";
+			echo "<br>予約可能人数<br>残り" . $disp_number ."席";
 			//echo $linkurl ? ('<a class="calendar-daylink" href="' . $linkurl . '">') : '';
 			//echo (empty($this->controls[$mark . '_mark']) ? $disp_number : $this->controls[$mark . '_mark']);
 			//echo $linkurl ? '</a>' : '';
@@ -316,7 +316,7 @@ class MTSSB_Front extends MTSSB_Booking {
 			echo "<br>満席";
 			//echo $this->controls['full_mark'];
 		} else {
-			echo $this->controls['disable'];
+			echo "<br>" . $this->controls['disable'];
 		}
 
 		echo "</div></td>\n";
@@ -358,12 +358,12 @@ class MTSSB_Front extends MTSSB_Booking {
 		<div class="monthly-prev"><?php if ($this->this_time <= $prevtime) {
 			echo '<a href="' . esc_url(add_query_arg($prev_arg, $this->this_page)) . '">' . $prev_title . '</a>';
 		} else {
-			echo "<span class=\"no-link\">$prev_title</span>";
+			echo "<span class=\"no-link\" style=\"color:#fff\">$prev_title</span>";
 		} ?></div>
 		<div class="monthly-next"><?php if ($nexttime < $this->max_time) {
 			echo '<a href="' . esc_url(add_query_arg($next_arg, $this->this_page)) . '">' . $next_title . '</a>';
 		} else {
-			echo "<span class=\"no-link\">$next_title</span>";
+			echo "<span class=\"no-link\" style=\"color:#fff\">$next_title</span>";
 		} ?></div>
 		<br style="clear:both" />
 	</div>
